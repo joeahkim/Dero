@@ -5,8 +5,13 @@
 @section('content')
 <div class="pagetitle">
     <h1>Pending Returns</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('super-admin.dashboard') }}">Home</a></li>
+            <li class="breadcrumb-item active">Returns</li>
+        </ol>
+    </nav>
 </div>
-
 <div class="container-fluid py-4">
     @if(session('success'))
     <div class="alert alert-success">

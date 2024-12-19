@@ -9,7 +9,7 @@
     <h1>Add a Car</h1>
     <nav>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('super-admin.dashboard') }}">Home</a></li>
             <li class="breadcrumb-item active">Car</li>
         </ol>
     </nav>

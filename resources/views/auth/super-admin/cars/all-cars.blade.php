@@ -3,8 +3,17 @@
 @section('title', 'All Cars')
 
 @section('content')
+<div class="pagetitle">
+    <h1>All Cars</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('super-admin.dashboard') }}">Home</a></li>
+            <li class="breadcrumb-item active">Car</li>
+        </ol>
+    </nav>
+</div>
 <div class="container py-4">
-    <h1 class="mb-4">Cars Available</h1>
+
 
     <table class="table table-bordered">
         <thead>

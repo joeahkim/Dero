@@ -4,7 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Derrique H&T</title>
+	<link href="{{ asset('assets/img/favicon.jpg') }}" rel="icon">
+	<link href="{{ asset('assets/img/favicon.jpg') }}" rel="apple-touch-icon">
 	<link rel="stylesheet" href="{{ asset('css/admin-signup.css') }}">
 </head>
 
