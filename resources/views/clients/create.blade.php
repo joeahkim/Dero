@@ -24,7 +24,7 @@
     @endif
 
 
-    <form method="POST" action="{{ route('clients.store') }}" enctype="multipart/form-data">
+    <form method="POST" action="{{ route('admin.clients.store') }}" enctype="multipart/form-data">
         @csrf
 
         <!-- Client Details Section -->

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<!-- <h2>Weekly Coding Challenge #1: Sign in/up Form</h2> -->
+
 	<div class="container" id="container">
 		<div class="form-container sign-up-container">
 			<form action="#">
@@ -39,7 +39,13 @@
 					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 				<span>or use your account</span>
-
+				@if ($errors->any())
+				<div class="alert alert-danger">
+					@foreach ($errors->all() as $error)
+					<h5>{{ $error }}</h5>
+					@endforeach
+				</div>
+				@endif
 				<!-- Email Input -->
 				<input type="email" name="email" placeholder="Email" required autofocus />
 
