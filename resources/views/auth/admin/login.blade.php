@@ -30,7 +30,7 @@
 		</div>
 		<div class="form-container sign-in-container">
 			<!-- Sign In Form -->
-			<form method="POST" action="{{ route('admin.login.submit') }}">
+			<form method="POST" action="{{ route('login') }}">
 				@csrf <!-- Include CSRF Token for security -->
 				<h1>Sign in</h1>
 				<div class="social-container">

@@ -18,8 +18,9 @@ class RoleMiddleware
     public function handle($request, Closure $next, $role)
     {
         // Check if the user has the required role
-        if ($request->user()->role !== $role) {
-            return redirect('/unauthorized'); // Redirect to an unauthorized page
+        if (!Auth::check() || Auth::user()->role !== $role) {
+            // Redirect to a generic unauthorized page
+            return redirect()->route('unauthorized')->withErrors(['error' => 'Unauthorized.']);
         }
 
         return $next($request);

@@ -7,7 +7,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('clients.create') }}">
+            <a class="nav-link" href="{{ route('admin.clients.create') }}">
                 <i class="bi bi-card-list"></i> <span>Add a Client</span>
             </a>
         </li>
@@ -17,7 +17,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('bookings.pendingReturns') }}">
+            <a class="nav-link" href="{{ route('admin.bookings.pendingReturns') }}">
                 <i class="bi bi-clock-history"></i> <span>Pending Returns</span>
             </a>
         </li>

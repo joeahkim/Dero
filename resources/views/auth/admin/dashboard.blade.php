@@ -26,7 +26,7 @@
             </div>
             @endif
 
-            <form method="POST" action="{{ route('bookings.store') }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('admin.bookings.store') }}" enctype="multipart/form-data">
                 @csrf
 
                 <div class="row mb-3">
